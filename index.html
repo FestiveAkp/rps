@@ -4,41 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rock-Paper-Scissors</title>
-    <link rel="stylesheet" href="style.css">
+
+    <title>Rock Paper Scissors</title>
+
+    <!-- Skeleton CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Game Script -->
+    <script src="script.js" async></script>
+
 </head>
 <body>
-    <div class="container">
-        <div class="side1">
-            <div class="fields">
-                <p id="userField">Choose an option.</p>
-                <p id="computerField">&nbsp;</p>
-                <p id="outcomeField">&nbsp;</p>
-            </div>
 
-            <div class="buttons">
-                <button id="rock" onclick="playRPS(1)">Rock</button>
-                <button id="paper" onclick="playRPS(2)">Paper</button>
-                <button id="scissors" onclick="playRPS(3)">Scissors</button>
+    <div class="section header">
+        <div class="container">
+            <div class="row">
+                <h1>Rock Paper Scissors</h1>
             </div>
-        </div>
-        <div class="side2">
-            <table>
-                <thead>
-                    <tr>
-                        <th>You</th>
-                        <th>Computer</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td id="playerScore">0</td>
-                        <td id="computerScore">0</td>
-                    </tr>
-                </tbody>
-            </table>
         </div>
     </div>
-    <script src="script.js"></script>
+
+    <div class="section center">
+        <div class="container">
+            <div class="row">
+
+                <div class="seven columns">
+                    <p id="userField">Choose an option.</p>
+                    <p id="computerField">&nbsp;</p>
+                    <p id="outcomeField">&nbsp;</p>
+                </div>
+
+                <div class="five columns">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>You</th>
+                                <th>Computer</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="playerScore">0</td>
+                                <td id="computerScore">0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="section bottom">
+        <div class="container">
+
+            <div class="buttons">
+                <button class="button-primary" id="rock"  onclick="playRPS(1)" >Rock</button>
+                <button class="button-primary" id="paper" onclick="playRPS(2)">Paper</button>
+                <button class="button-primary" id="scissors" onclick="playRPS(3)">Scissors</button>
+            </div>
+            
+        </div>
+    </div>
+
+<!-- End -->
+
 </body>
 </html>
