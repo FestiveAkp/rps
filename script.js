@@ -1,5 +1,6 @@
 "use strict"
 
+// Main game function
 async function playRPS(userIn) {
     const RPS = {
         1 : 'rock',
@@ -31,7 +32,7 @@ async function playRPS(userIn) {
     enableButtons();
 }
 
-function resetFields () {
+function resetFields() {
     userField.innerHTML = '&nbsp';
     computerField.innerHTML = '&nbsp';
     outcomeField.innerHTML = '&nbsp';
@@ -51,6 +52,7 @@ function disableButtons() {
     scissorsBtn.className = 'button-disabled';
 }
 
+// Return random number from 1-3
 function getComputerIn() {
     return Math.floor(Math.random() * (4-1) + 1);
 }
