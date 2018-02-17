@@ -29,21 +29,21 @@ async function playRPS(userIn) {
 
     // Shake
     movePicsDown();
-    await wait(100);
+    await wait(105);
     movePicsUp();
-    await waitMore(100);
+    await waitMore(105);
     movePicsDown();
-    await waitEvenMore(100);
+    await waitEvenMore(105);
     movePicsUp();
-    await waitMoreSo(100);
+    await waitMoreSo(105);
     
     // Change images to result
     userPic.src = `img/${ RPS[userIn.toString()] }-right.png`;
     computerPic.src = `img/${ RPS[computerIn.toString()] }-left.png`;
     movePicsDown();
-    await waitAgain(100);
+    await waitAgain(105);
     movePicsUp();
-    await waitOnceMore(100);
+    await waitOnceMore(105);
     
     let outcome = getRoundOutcome(userIn, computerIn);
     
