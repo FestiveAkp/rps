@@ -1,5 +1,5 @@
 h1 {
-    margin-top: 3em;
+    margin-top: 2.0em;
     margin-bottom: 0.5em;
 }
 
@@ -20,26 +20,27 @@ body {
     text-align: center;
 }
 
-@media (min-width: 550px) {
-    .column,
-    .columns {
-      margin-left: 4%; }
-
-}
-
 table,
 td,
 th {
     text-align: center;
     margin: auto;
-    width: 10em;
+    margin-bottom: 4em;
+    table-layout: fixed;
+    
+}
+
+th {
+    width: 19em;
 }
 
 .section.bottom {
     margin-top: 1.5em;
+    
 }
 
 img {
     width: 180px;
     height: 180px;
 }
+
