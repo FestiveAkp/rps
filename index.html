@@ -7,7 +7,7 @@
   
   <title>Rock Paper Scissors</title>
   <meta name="description" content="Rock Paper Scissors game, made with Javascript">
-  
+
   <!-- Skeleton CSS -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
@@ -21,23 +21,21 @@
   
   <div class="section header">
     <div class="container">
-      <div class="row">
-        <h1>Rock Paper Scissors</h1>
-      </div>
+      <h1>Rock Paper Scissors</h1>
     </div>
   </div>
   
+  <hr>
+
   <div class="section center">
     <div class="container">
       <div class="row">
         
-        <div class="seven columns">
-          <p id="userField">Choose an option.</p>
-          <p id="computerField">&nbsp;</p>
-          <p id="outcomeField">&nbsp;</p>
+        <div class="four columns">
+          <img alt="rock" src="img/rock-right.png">
         </div>
-        
-        <div class="five columns">
+
+        <div class="four columns">
           <table>
             <thead>
               <tr>
@@ -53,15 +51,30 @@
             </tbody>
           </table>
         </div>
+
+        <div class="four columns">
+          <img alt="rock" src="img/rock-left.png">
+        </div>
         
       </div>
+
+      <div class="row">
+        <div class="container">
+          <div class="six columns offset-by-three">
+            <p id="userField">Choose an option</p>
+            <p id="computerField">to play against the computer.</p>
+            <p id="outcomeField">&nbsp;</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
   
   <div class="section bottom">
     <div class="container">
       
-      <div class="buttons">
+      <div class="six columns offset-by-three">
         <button class="button-primary" id="rock"  onclick="playRPS(1)" >Rock</button>
         <button class="button-primary" id="paper" onclick="playRPS(2)">Paper</button>
         <button class="button-primary" id="scissors" onclick="playRPS(3)">Scissors</button>

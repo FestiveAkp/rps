@@ -1,9 +1,45 @@
 h1 {
-    margin-top: 0.5em;
+    margin-top: 3em;
     margin-bottom: 0.5em;
+}
+
+button {
+    width: 12em;
 }
 
 button.button-disabled:hover {
     color: #555;
     border: 1px solid #bbb;
-}   
+}
+
+hr {
+    margin-top: 0;
+}
+
+body {
+    text-align: center;
+}
+
+@media (min-width: 550px) {
+    .column,
+    .columns {
+      margin-left: 4%; }
+
+}
+
+table,
+td,
+th {
+    text-align: center;
+    margin: auto;
+    width: 10em;
+}
+
+.section.bottom {
+    margin-top: 1.5em;
+}
+
+img {
+    width: 180px;
+    height: 180px;
+}
