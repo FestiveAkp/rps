@@ -11,6 +11,7 @@ async function playRPS(userIn) {
     var wait = ms => new Promise((r, j)=>setTimeout(r, ms));
     var waitMore = ms => new Promise((r, j)=>setTimeout(r, ms));
 
+    // Declare and format output text fields
     let outcomeField = document.getElementById('outcomeField');
     let userField = document.getElementById('userField');
     let computerField = document.getElementById('computerField');
@@ -27,6 +28,7 @@ async function playRPS(userIn) {
 
     let outcome = getRoundOutcome(userIn, computerIn);
     
+    // Update output text fields with outcome
     outcomeField.innerHTML = `You ${outcome}`;
     updateScoreTable(outcome);
     enableButtons();
